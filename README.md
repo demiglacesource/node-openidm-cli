@@ -107,3 +107,8 @@ or
     $ export OPENIDM_DEFAULT_PROFILE=demiglacesource
     $ openidm managed/user/demiglacesource -X GET
 
+Link
+------
+
+* https://forgerock.org/openidm
+* http://openidm.forgerock.org/docs.html
