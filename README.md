@@ -79,7 +79,7 @@ Using Profile
 Profile information can save multiple.  
 For example, set as follows.
 
-    $ openidm configure --profile demiglacesource
+    $ openidm configure -p demiglacesource
     Server URL [http://localhost:8080]: http://localhost:8080
     Username [openidm-admin]: openidm-admin
     Password [openidm-admin]: openidm-admin
@@ -94,10 +94,10 @@ Profile is added to the credentials.
 
 Profile specified method can be selected from the following two types.
 
-    $ openidm managed/user/demiglacesource --request GET --profile demiglacesource
+    $ openidm managed/user/demiglacesource -X GET -p demiglacesource
 
 or 
 
     $ export OPENIDM_DEFAULT_PROFILE=demiglacesource
-    $ openidm managed/user/demiglacesource --request GET
+    $ openidm managed/user/demiglacesource -X GET
 
