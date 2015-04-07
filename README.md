@@ -8,7 +8,7 @@ Install
 
 Install from npm:
 
-    $ npm install openidm-cli
+    $ npm install -g openidm-cli
 
 Introduction
 --------------
