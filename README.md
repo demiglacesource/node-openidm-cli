@@ -31,14 +31,20 @@ The settings are stored in the following location.
 Operation of a OpenIDM
 ------------------------
 
+example: create managed object.
+
     $ openidm managed/user?_action=create \  
               -X POST \  
               -d '{"userName":"demiglacesource","password":"P@ssw0rd","givenName":"demiglace","sn":"source","mail":"demiglacesource@gmail.com"'
+
+ecample: read managed object.
 
     $ openidm managed/user/demiglacesource -X GET
 
 Options
 ---------
+
+Please refer to the help.  
 
     $ openidm -h
 
