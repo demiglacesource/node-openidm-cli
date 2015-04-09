@@ -1,7 +1,7 @@
 {
   "name": "openidm-cli",
   "description": "OpenIDM CLI for Node.js.",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "main": "index.js",
   "bin": {
     "openidm": "bin/openidm"
