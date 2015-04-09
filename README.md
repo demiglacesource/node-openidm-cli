@@ -31,13 +31,13 @@ The settings are stored in the following location.
 Operation of a OpenIDM
 ------------------------
 
-example: create managed object.
+Example: create managed object.
 
     $ openidm managed/user?_action=create \  
               -X POST \  
               -d '{"userName":"demiglacesource","password":"P@ssw0rd","givenName":"demiglace","sn":"source","mail":"demiglacesource@gmail.com"'
 
-ecample: read managed object.
+Example: read managed object.
 
     $ openidm managed/user/demiglacesource -X GET
 
@@ -48,11 +48,15 @@ Please refer to the help.
 
     $ openidm -h
 
-    Usage: openidm configure
+    Usage: openidm configure [options]
 
     	"configure" is the first step. 
     	performs a "configure", you can set the authentication information for OpenIDM REST API.
 
+    	--profile, -p
+    		OpenIDM profile
+    		'script --profile=value' or 'script -p value'
+    
     Usage: openidm resource [options]
 
     	"resource" is a URI of OpenIDM REST API.
@@ -71,14 +75,14 @@ Please refer to the help.
     		JSON value
     		'script --data=value' or 'script -d value'
     
+    	--rev, -r
+    		Resource of revision
+    		'script --rev=value' or 'script -r value'
+
     	--profile, -p
     		OpenIDM profile
     		'script --profile=value' or 'script -p value'
     
-    	--rev, -r
-    		
-    		'script --rev=value' or 'script -r value'
-
 Using Profile
 ---------------
 
@@ -112,3 +116,4 @@ Link
 
 * https://forgerock.org/openidm
 * http://openidm.forgerock.org/docs.html
+
