@@ -1,4 +1,4 @@
-node-opneidm-cli
+node-openidm-cli
 =========================
 
 OpenIDM CLI for Node.js.
