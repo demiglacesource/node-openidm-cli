@@ -35,7 +35,7 @@ Example: create managed object.
 
     $ openidm managed/user?_action=create \  
               -X POST \  
-              -d '{"userName":"demiglacesource","password":"P@ssw0rd","givenName":"demiglace","sn":"source","mail":"demiglacesource@gmail.com"'
+              -d '{"userName":"demiglacesource","password":"P@ssw0rd","givenName":"demiglace","sn":"source","mail":"demiglacesource@gmail.com"}'
 
 Example: read managed object.
 
@@ -110,10 +110,23 @@ or
 
     $ export OPENIDM_DEFAULT_PROFILE=demiglacesource
     $ openidm managed/user/demiglacesource -X GET
+    
+Read data from file
+---------------
+
+JSON value also accepts input from a file.  
+Without leaving the shell history, can safely use.
+
+    $ cat data.json
+    {"userName":"demiglacesource","password":"P@ssw0rd","givenName":"demiglace","sn":"source","mail":"demiglacesource@gmail.com"}
+
+    $ openidm managed/user?_action=create -X POST -d data.json
+    ...
 
 Link
 ------
 
 * https://forgerock.org/openidm
 * http://openidm.forgerock.org/docs.html
+
 
